@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,47 +10,40 @@
 <body>
 
   <div class="intro-screen" id="intro">
-    <h1>To My Dearest...</h1>
-    <p>Pencet tombol di bawah buat buka albumnya ya</p>
-    <button onclick="bukaAlbum()">Open Album ✨</button>
+    <h1>Special for You... ❤️</h1>
+    <p>Ada 15 foto kenangan kita di dalam. Buka yuk?</p>
+    <button onclick="bukaAlbum()">Open My Album ✨</button>
   </div>
 
   <div class="main-album" id="album" style="display: none;">
     <div class="header-section">
       <h1 class="album-title">My Girlfriend Album 💕</h1>
-      <p class="subtitle">Setiap foto punya cerita sendiri...</p>
-      
       <div class="audio-player">
         <audio id="myAudio" controls loop>
-          <source src="gokil.mp3" type="audio/mpeg">
+          <source src="anjay.mp3" type="audio/mpeg">
         </audio>
       </div>
     </div>
 
     <div class="memory-grid">
-      <div class="memory-card" style="--rot: -2deg;">
-        <img src="gambar1.jpg" alt="Foto 1">
-        <p class="caption">Senyum favorit aku 🥰</p>
-      </div>
-
-      <div class="memory-card" style="--rot: 3deg;">
-        <img src="gambar2.jpg" alt="Foto 2">
-        <p class="caption">Hari paling bahagia ✨</p>
-      </div>
-
-      <div class="memory-card" style="--rot: -3deg;">
-        <img src="gambar3.jpg" alt="Foto 3">
-        <p class="caption">Cantik banget sih? 🌹</p>
-      </div>
-
-      <div class="memory-card" style="--rot: 2deg;">
-        <img src="gambar4.jpg" alt="Foto 4">
-        <p class="caption">I Love You! ❤️</p>
-      </div>
+      <div class="memory-card" style="--rot: -2deg;"><img src="gambar1.jpg"><p class="caption">Cantik banget ✨</p></div>
+      <div class="memory-card" style="--rot: 3deg;"><img src="gambar2.jpg"><p class="caption">Favorit aku ❤️</p></div>
+      <div class="memory-card" style="--rot: -3deg;"><img src="gambar3.jpg"><p class="caption">Gemes bgt! 🥰</p></div>
+      <div class="memory-card" style="--rot: 2deg;"><img src="gambar4.jpg"><p class="caption">Bahagia terus ya 🌹</p></div>
+      <div class="memory-card" style="--rot: -4deg;"><img src="gambar5.jpg"><p class="caption">Love you! 💖</p></div>
+      <div class="memory-card" style="--rot: 1deg;"><img src="gambar6.jpg"><p class="caption">Jangan cemberut 😋</p></div>
+      <div class="memory-card" style="--rot: -2deg;"><img src="gambar8.jpg"><p class="caption">Anggun bgt ✨</p></div>
+      <div class="memory-card" style="--rot: 4deg;"><img src="gambar9.jpg"><p class="caption">My everything 🌎</p></div>
+      <div class="memory-card" style="--rot: -3deg;"><img src="gambar10.jpg"><p class="caption">Senyumnya itu lho.. 😍</p></div>
+      <div class="memory-card" style="--rot: 2deg;"><img src="gambar11.jpg"><p class="caption">Stay with me ❤️</p></div>
+      <div class="memory-card" style="--rot: -2deg;"><img src="gambar12.jpg"><p class="caption">Mood booster! 🚀</p></div>
+      <div class="memory-card" style="--rot: 3deg;"><img src="gambar13.jpg"><p class="caption">The only one ☝️</p></div>
+      <div class="memory-card" style="--rot: -1deg;"><img src="gambar14.jpg"><p class="caption">Manis bgt 🍬</p></div>
+      <div class="memory-card" style="--rot: 4deg;"><img src="gambar15.jpg"><p class="caption">Forever & Always 💍</p></div>
     </div>
 
     <div class="footer-message">
-      <p>Makasih ya udah selalu ada...</p>
+      <p>I Love You More Than You Know...</p>
     </div>
   </div>
 
@@ -59,12 +51,9 @@
     function bukaAlbum() {
       document.getElementById('intro').style.display = 'none';
       document.getElementById('album').style.display = 'block';
-      
-      // Musik otomatis jalan pas dibuka
       var audio = document.getElementById('myAudio');
       audio.play();
     }
   </script>
-
 </body>
 </html>
