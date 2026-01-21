@@ -11,13 +11,16 @@
 
   <div class="intro-screen" id="intro">
     <h1>Special for You... ❤️</h1>
-    <p>Ada 15 foto kenangan kita di dalam. Buka yuk?</p>
+    <p>Ada 15 foto kamu di dalam. Buka yuk?</p>
     <button onclick="bukaAlbum()">Open My Album ✨</button>
   </div>
 
   <div class="main-album" id="album" style="display: none;">
     <div class="header-section">
       <h1 class="album-title">My Girlfriend Album 💕</h1>
+      
+      <p class="fav-song-text">✨ your fav song ✨</p>
+      
       <div class="audio-player">
         <audio id="myAudio" controls loop>
           <source src="anjay.mp3" type="audio/mpeg">
@@ -52,7 +55,7 @@
       document.getElementById('intro').style.display = 'none';
       document.getElementById('album').style.display = 'block';
       var audio = document.getElementById('myAudio');
-      audio.play();
+      audio.play().catch(function(e) { console.log("Audio play diblokir"); });
     }
   </script>
 </body>
