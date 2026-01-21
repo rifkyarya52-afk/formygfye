@@ -1,1 +1,86 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff0f3;
+  font-family: 'Quicksand', sans-serif;
+  color: #ff4d6d;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Intro Screen */
+.intro-screen {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: #ff4d6d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  text-align: center;
+}
+
+.intro-screen h1 { font-family: 'Pacifico', cursive; font-size: 2.5rem; margin-bottom: 10px; }
+
+.intro-screen button {
+  background: white;
+  color: #ff4d6d;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.header-section { text-align: center; margin: 40px 0; }
+.album-title { font-family: 'Pacifico', cursive; font-size: 2.2rem; margin-bottom: 5px; }
+.audio-player { margin-top: 15px; }
+
+/* Memory Card / Polaroid */
+.memory-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.memory-card {
+  background: white;
+  padding: 15px 15px 35px 15px;
+  width: 85%;
+  max-width: 320px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: rotate(var(--rot));
+  transition: 0.3s;
+}
+
+.memory-card img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.memory-card .caption {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.memory-card:hover {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 10;
+}
+
+.footer-message { text-align: center; margin-top: 30px; font-style: italic; }
