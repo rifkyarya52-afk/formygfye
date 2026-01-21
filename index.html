@@ -1,1 +1,70 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Girlfriend Album ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="intro-screen" id="intro">
+    <h1>To My Dearest...</h1>
+    <p>Pencet tombol di bawah buat buka albumnya ya</p>
+    <button onclick="bukaAlbum()">Open Album ✨</button>
+  </div>
+
+  <div class="main-album" id="album" style="display: none;">
+    <div class="header-section">
+      <h1 class="album-title">My Girlfriend Album 💕</h1>
+      <p class="subtitle">Setiap foto punya cerita sendiri...</p>
+      
+      <div class="audio-player">
+        <audio id="myAudio" controls loop>
+          <source src="gokil.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="memory-grid">
+      <div class="memory-card" style="--rot: -2deg;">
+        <img src="gambar1.jpg" alt="Foto 1">
+        <p class="caption">Senyum favorit aku 🥰</p>
+      </div>
+
+      <div class="memory-card" style="--rot: 3deg;">
+        <img src="gambar2.jpg" alt="Foto 2">
+        <p class="caption">Hari paling bahagia ✨</p>
+      </div>
+
+      <div class="memory-card" style="--rot: -3deg;">
+        <img src="gambar3.jpg" alt="Foto 3">
+        <p class="caption">Cantik banget sih? 🌹</p>
+      </div>
+
+      <div class="memory-card" style="--rot: 2deg;">
+        <img src="gambar4.jpg" alt="Foto 4">
+        <p class="caption">I Love You! ❤️</p>
+      </div>
+    </div>
+
+    <div class="footer-message">
+      <p>Makasih ya udah selalu ada...</p>
+    </div>
+  </div>
+
+  <script>
+    function bukaAlbum() {
+      document.getElementById('intro').style.display = 'none';
+      document.getElementById('album').style.display = 'block';
+      
+      // Musik otomatis jalan pas dibuka
+      var audio = document.getElementById('myAudio');
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
